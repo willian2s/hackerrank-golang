@@ -26,7 +26,9 @@ The second line contains `n` space-separated integers representing the array's e
 Print the sum of the array's elements as a single integer.
 
 ```bash
-Input: 1 2 3 4 10 11
+Input:
+6
+1 2 3 4 10 11
 
 Output: 31
 ```

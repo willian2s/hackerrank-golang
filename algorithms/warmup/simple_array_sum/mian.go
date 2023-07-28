@@ -14,7 +14,7 @@ import (
 func main() {
 	reader := bufio.NewReaderSize(os.Stdin, 16*1024*1024)
 
-	stdout, err := os.Create("output.txt")
+	stdout, err := os.Create("simple_array_sum.txt")
 	checkError(err)
 
 	defer stdout.Close()
@@ -37,6 +37,7 @@ func main() {
 
 	result := resolution.SimpleArraySum(ar)
 
+	fmt.Printf("%d\n", result)
 	fmt.Fprintf(writer, "%d\n", result)
 
 	writer.Flush()
